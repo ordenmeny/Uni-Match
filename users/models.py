@@ -7,3 +7,4 @@ class CustomUser(AbstractUser):
     university = models.CharField(max_length=255, null=True, blank=True)
     uniq_code = models.CharField(max_length=50, unique=True, null=True, blank=True)
     chat_id = models.CharField(max_length=50, null=True, blank=True)
+    image = models.ImageField(upload_to="users/", null=True, blank=True)

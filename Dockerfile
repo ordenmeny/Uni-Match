@@ -17,7 +17,8 @@ RUN python -m venv /django_venv && \
     apt-get install -y build-essential && \
     pip install "psycopg[c]" && \
     pip install --upgrade pip && \
-    pip install --no-cache-dir -r req.txt
+    pip install --no-cache-dir -r req.txt && \
+    mkdir -p /vol/web
 
 
 CMD ["sh", "-c", "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"]

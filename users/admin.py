@@ -9,7 +9,7 @@ class CustomUserAdmin(UserAdmin):
     list_display_links = ('username', 'email')
     list_editable = ('uniq_code', 'chat_id')
 
-    fields_to_set = ("first_name", "last_name", "email", "age", "university", "uniq_code")
+    fields_to_set = ("first_name", "last_name", "email", "age", "university", "uniq_code", "image")
     fieldsets = (
         (None, {"fields": ("username", "password")}),
         (_("Personal info"), {"fields": fields_to_set}),
