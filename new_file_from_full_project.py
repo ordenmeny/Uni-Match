@@ -1,1 +1,0 @@
-print("This file was created from full project")
